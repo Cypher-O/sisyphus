@@ -14,7 +14,7 @@ Sisyphus app built with the Flutter framework and Binance Websockets API
 
 ## App Gif & Screenshots
 
-https://github.com/Cypher-O/sisyphus/blob/master/assets/sisyphus.gif
+https://github.com/Cypher-O/sisyphus/blob/master/assets/sisyphus
 
 ![imageone](./assets/screenshot1.png)
 ![imageone](./screens/screenshot2.png)
