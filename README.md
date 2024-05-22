@@ -1,16 +1,20 @@
-# sisyphus
+# Sisyphys App
 
 Sisyphus app built with the Flutter framework and Binance Websockets API
 
-## Getting Started
+## Tools used in building
 
-This project is a starting point for a Flutter application.
+- flutter `v3.22 - mobile sdk`
+- hooks_riverpod `state management`
+- flutter_svg `svg images`
+- intl `internalization`
+- http `API calls`
+- web_socket_channel `web sockets`
+- candlesticks `candlesticks ui`
 
-A few resources to get you started if this is your first Flutter project:
+## App Gif & Screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![imageone](./assets/screenshot1.png)
+![imageone](./screens/screenshot2.png)
+![imageone](./screens/screenshot3.png)
