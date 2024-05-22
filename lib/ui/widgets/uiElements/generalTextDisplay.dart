@@ -6,20 +6,20 @@ import 'package:google_fonts/google_fonts.dart';
 class GeneralTextDisplay extends StatelessWidget {
   final String inputText;
   final double? textFontSize, letterSpacing;
-  final FontWeight textFontWeight;
-  final int noOfTextLine;
-  final String textSemanticLabel;
-  final Color textColor;
+  final FontWeight? textFontWeight;
+  final int? noOfTextLine;
+  final String? textSemanticLabel;
+  final Color? textColor;
   final TextDecoration? textDecoration;
   final TextAlign? textAlign;
   final Color? decorationColor;
 
-  const GeneralTextDisplay(this.inputText, this.textColor, this.noOfTextLine,
-      this.textFontSize, this.textFontWeight, this.textSemanticLabel,
+  const GeneralTextDisplay(this.inputText,
+      this.textFontSize,
       {super.key, this.textDecoration,
         this.textAlign,
         this.decorationColor,
-        this.letterSpacing});
+        this.letterSpacing, this.textFontWeight, this.textSemanticLabel, this.textColor, this.noOfTextLine,});
 
   @override
   Widget build(BuildContext context) {

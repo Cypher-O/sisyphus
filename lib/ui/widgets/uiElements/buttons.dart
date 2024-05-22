@@ -33,11 +33,10 @@ class DefaultButton extends StatelessWidget {
         onPressed: onPressed,
         child: GeneralTextDisplay(
           title,
-          white,
-          1,
           16,
-          FontWeight.w600,
-          ""
+          textColor: white,
+          noOfTextLine: 1,
+          textFontWeight: FontWeight.w600,
         ),
       ),
     );
@@ -80,12 +79,11 @@ class DefaultGradientButton extends StatelessWidget {
         padding: const EdgeInsets.all(8),
         onPressed: onPressed,
         child: GeneralTextDisplay(
-            title,
-            white,
-            1,
-            16,
-            FontWeight.w600,
-            ""
+          title,
+          16,
+          textColor: white,
+          noOfTextLine: 1,
+          textFontWeight: FontWeight.w600,
         ),
       ),
     );
@@ -111,15 +109,15 @@ class DefaultImageButton extends StatelessWidget {
     return SizedBox(
       width: size,
       height: size,
-      child: InkWell(
+      child: GestureDetector(
         onTap: onPressed,
         child: isSvg
             ? SvgPicture.asset(
-          image,
-        )
+                image,
+              )
             : Image.asset(
-          image,
-        ),
+                image,
+              ),
       ),
     );
   }

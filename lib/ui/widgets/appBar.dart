@@ -6,7 +6,8 @@ import 'package:sisyphus/utils/assets.dart';
 import 'package:sisyphus/utils/constants.dart';
 
 class CustomizedAppBar extends StatelessWidget implements PreferredSizeWidget {
-  CustomizedAppBar({super.key});
+  final VoidCallback onMenuPressed;
+  const CustomizedAppBar({super.key, required this.onMenuPressed});
 
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
@@ -16,12 +17,12 @@ class CustomizedAppBar extends StatelessWidget implements PreferredSizeWidget {
     return DecoratedBox(
       decoration: BoxDecoration(
         color: Theme.of(context).cardColor,
-        // border: Border(
-          // bottom: BorderSide(
-          //   color: Theme.of(context).shadowColor,
-          //   width: 1.5,
-          // ),
-        // ),
+        border: Border(
+          bottom: BorderSide(
+            color: Theme.of(context).shadowColor,
+            width: 1.5,
+          ),
+        ),
       ),
       child: AppBar(
         backgroundColor: Colors.transparent,
@@ -50,7 +51,7 @@ class CustomizedAppBar extends StatelessWidget implements PreferredSizeWidget {
           DefaultImageButton(
             image: ImageAssets.menu_icon,
             isSvg: true,
-            onPressed: () {},
+            onPressed: onMenuPressed,
           ),
           S(w: 15),
         ],

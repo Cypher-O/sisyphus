@@ -106,16 +106,17 @@ class _TradesState extends State<Trades> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        S(h: 30),
-                         GeneralTextDisplay(
+                        S(h: 60),
+                        GeneralTextDisplay(
                           value == 0
                               ? 'No Open Orders'
                               : value == 1
-                              ? 'No Positions'
-                              : value == 2
-                              ? 'No Order History'
-                              : 'No Trade History',
+                                  ? 'No Positions'
+                                  : value == 2
+                                      ? 'No Order History'
+                                      : 'No Trade History',
                           20,
+                          textFontWeight: FontWeight.w500,
                         ),
                         S(h: 15),
                         SizedBox(
