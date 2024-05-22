@@ -18,7 +18,7 @@ Sisyphus app built with the Flutter framework and Binance Websockets API
   <tr>
     <td><img src="./assets/sisyphus.gif" alt="App Gif" width="250"></td>
     <td><img src="./assets/screenshot1.png" alt="Screenshot 1" width="250"></td>
-    <td><img src="./screens/screenshot2.png" alt="Screenshot 2" width="250"></td>
-    <td><img src="./screens/screenshot3.png" alt="Screenshot 3" width="250"></td>
+    <td><img src="./assets/screenshot2.png" alt="Screenshot 2" width="250"></td>
+    <td><img src="./assets/screenshot3.png" alt="Screenshot 3" width="250"></td>
   </tr>
 </table>
