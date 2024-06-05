@@ -1,9 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:sisyphus/ui/widgets/uiElements/buttons.dart';
-import 'package:sisyphus/ui/widgets/uiElements/sizedBox.dart';
-import 'package:sisyphus/utils/assets.dart';
-import 'package:sisyphus/utils/constants.dart';
+import 'package:sisyphus/utils/imports/generalImports.dart';
 
 class CustomizedAppBar extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback onMenuPressed;

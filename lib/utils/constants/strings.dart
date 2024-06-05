@@ -1,8 +1,7 @@
 // constants of string
 // screen sizing
 
-import 'package:flutter/material.dart';
-import 'package:sisyphus/ui/widgets/uiElements/screenSizing.dart';
+import 'package:sisyphus/utils/imports/generalImports.dart';
 
 
 ScreenSize sS(

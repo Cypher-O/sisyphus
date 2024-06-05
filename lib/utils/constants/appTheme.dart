@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:sisyphus/utils/imports/flutterImports.dart';
 
 const white = Colors.white;
 const black = Colors.black;

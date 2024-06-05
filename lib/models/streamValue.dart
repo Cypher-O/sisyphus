@@ -1,4 +1,4 @@
-import 'package:sisyphus/models/symbols.dart';
+import 'package:sisyphus/utils/imports/modelImports.dart';
 
 class StreamValue {
   StreamValue({

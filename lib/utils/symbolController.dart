@@ -1,8 +1,5 @@
-
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sisyphus/data/repositories/binanceRepository.dart';
-import 'package:sisyphus/models/symbols.dart';
 import 'package:sisyphus/utils/chartController.dart';
+import 'package:sisyphus/utils/imports/generalImports.dart';
 
 final symbolControllerProvider =
 NotifierProvider<SymbolController, List<Symbols>>(() {

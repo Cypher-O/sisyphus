@@ -1,7 +1,7 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:sisyphus/utils/imports/generalImports.dart';
 
-final tradesViewModelProvider = ChangeNotifierProvider((ref) => TradesViewModel());
+final tradesViewModelProvider =
+    ChangeNotifierProvider((ref) => TradesViewModel());
 
 class TradesViewModel extends ChangeNotifier {
   int _selectedValue = 0;

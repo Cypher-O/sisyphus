@@ -1,14 +1,8 @@
-import 'dart:convert';
-
-import 'package:candlesticks/candlesticks.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:sisyphus/utils/imports/generalImports.dart';
 import 'package:http/http.dart' as http;
-import 'package:sisyphus/models/symbols.dart';
-import 'package:web_socket_channel/web_socket_channel.dart';
 
 final binanceRepositoryProvider =
-Provider<BinanceRepository>((ref) => BinanceRepository());
+    Provider<BinanceRepository>((ref) => BinanceRepository());
 
 class BinanceRepository {
   Future<List<Candle>> fetchCandles({
@@ -23,7 +17,7 @@ class BinanceRepository {
     final res = await http.get(uri);
     debugPrint('API Response: ${res.body}');
     return (jsonDecode(res.body) as List<dynamic>)
-    // ignore: unnecessary_lambdas
+        // ignore: unnecessary_lambdas
         .map((e) => Candle.fromJson(e))
         .toList()
         .reversed
@@ -40,7 +34,8 @@ class BinanceRepository {
   }
 
   WebSocketChannel establishConnection(String symbol, String interval) {
-    debugPrint('Establishing connection for symbol: $symbol, interval: $interval');
+    debugPrint(
+        'Establishing connection for symbol: $symbol, interval: $interval');
     final channel = WebSocketChannel.connect(
       Uri.parse('wss://stream.binance.com:9443/ws'),
     );
@@ -65,7 +60,8 @@ class BinanceRepository {
       ),
     );
     channel.stream.listen((event) {
-      debugPrint('WebSocket Data: $event'); // Print the data received from the WebSocket
+      debugPrint(
+          'WebSocket Data: $event');
     });
     return channel;
   }

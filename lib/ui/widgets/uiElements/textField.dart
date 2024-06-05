@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:sisyphus/ui/widgets/uiElements/generalTextDisplay.dart';
-import 'package:sisyphus/utils/appTheme.dart';
-import 'package:sisyphus/utils/constants.dart';
+import 'package:sisyphus/utils/constants/appTheme.dart';
+import 'package:sisyphus/utils/constants/constants.dart';
 
 class InputField extends StatelessWidget {
   const InputField({

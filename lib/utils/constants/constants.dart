@@ -1,8 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
-
-
 // ignore: avoid_positional_boolean_parameters
+import 'package:sisyphus/utils/imports/flutterImports.dart';
+import 'package:sisyphus/utils/imports/pluginsImports.dart';
+
 typedef BoolCallback = void Function(bool);
 
 final currencyFormat = NumberFormat(

@@ -1,11 +1,4 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sisyphus/ui/widgets/uiElements/generalTextDisplay.dart';
-import 'package:sisyphus/ui/widgets/uiElements/sizedBox.dart';
-import 'package:sisyphus/utils/appTheme.dart';
-import 'package:sisyphus/utils/constants.dart';
-import 'package:sisyphus/viewmodels/trades.dart';
+import 'package:sisyphus/utils/imports/generalImports.dart';
 
 class Trades extends StatefulWidget {
   const Trades({super.key});

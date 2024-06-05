@@ -1,38 +1,6 @@
-import 'package:candlesticks/candlesticks.dart';
-import 'package:sisyphus/data/repositories/binanceRepository.dart';
-// import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sisyphus/data/streamValue.dart';
-//
-// class ChartController extends StateNotifier<List<Candle>> {
-//   ChartController() : super([]);
-//
-//   Future<List<Candle>> getCandles(StreamValue streamValue) async {
-//     // Simulated fetching of candles.
-//     // Replace with actual API call.
-//     return [];
-//   }
-//
-//   Future<void> loadMoreCandles(StreamValue streamValue) async {
-//     // Simulated fetching of more candles.
-//     // Replace with actual API call.
-//     state = [...state, ...[]]; // Add more candles to the list
-//   }
-// }
-//
-// class SocketController {
-//   void initialize(StreamValue streamValue) {
-//     // Initialize socket connection
-//   }
-// }
-
-
 // ignore_for_file: invalid_use_of_protected_member
 
-import 'dart:async';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sisyphus/models/candleTickerModel.dart';
-import 'package:sisyphus/models/orderBook.dart';
-import 'package:sisyphus/models/symbols.dart';
+import 'package:sisyphus/utils/imports/generalImports.dart';
 
 final currentSymbolStateProvider = StateProvider<Symbols?>((ref) {
   return null;

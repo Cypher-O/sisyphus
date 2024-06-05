@@ -1,11 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:sisyphus/ui/widgets/uiElements/generalTextDisplay.dart';
-import 'package:sisyphus/ui/widgets/uiElements/sizedBox.dart';
-import 'package:sisyphus/utils/appTheme.dart';
-import 'package:sisyphus/utils/assets.dart';
-import 'package:sisyphus/utils/constants.dart';
+import 'package:sisyphus/utils/imports/generalImports.dart';
 import 'package:sisyphus/utils/orderBookController.dart';
 
 class Orderbook extends ConsumerStatefulWidget {

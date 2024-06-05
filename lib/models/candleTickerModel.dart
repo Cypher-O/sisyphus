@@ -1,4 +1,4 @@
-import 'package:candlesticks/candlesticks.dart';
+import 'package:sisyphus/utils/imports/pluginsImports.dart';
 
 class CandleTickerModel {
   const CandleTickerModel({

@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:sisyphus/utils/strings.dart';
+import 'package:sisyphus/utils/constants/strings.dart';
 
 class S extends StatelessWidget {
   // h is height, w is width

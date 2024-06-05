@@ -1,6 +1,4 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter/material.dart';
-import 'package:sisyphus/models/orderBook.dart';
+import 'package:sisyphus/utils/imports/generalImports.dart';
 import 'package:sisyphus/utils/orderBookController.dart';
 
 class OrderBookViewModel extends ChangeNotifier {
